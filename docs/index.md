@@ -1,6 +1,6 @@
-# SCENE Ontology Documentation Page 
+# Data Lakes and SCENE Ontology Documentation Page 
 
-This documentation explores in detail the SCENE Ontology Tools as one of the main components of the SCENE architecture. To access the SCENE project website, click [here](https://thesceneproject.eu/).
+This documentation explores in detail the multidimensional Data Lakes and the SCENE Ontology as one of the main components of the SCENE architecture. To access the SCENE project website, click [here](https://thesceneproject.eu/).
 
 
 > **SCENE aims at building a globally competitive European film industry through AI and cultural heritage.**

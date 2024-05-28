@@ -1,17 +1,22 @@
-site_name: SCENE Ontology
+site_name: DL & SCENE-O
 site_url: 'https://scene-ontology-doc.readthedocs.org'
 repo_url: 'https://github.com/benmomo/scene-ontology-doc'
-site_description: 'SCENE Ontology Tools Documentation Hub'
+site_description: 'Datalakes and SCENE Ontology Documentation Hub'
 site_author: 'Benjamin Molina'
 
 docs_dir: 'docs'
 theme: readthedocs
 nav:
     - Home: 'index.md'
+    - Introduction to Data Lakes: 'dl_intro.md'
+    - DL Architectures: dl_arc.md
+    - DL implementations: dl_imp.md
+    - DL Best Practices: dl_bp.md
+    - DL User Guide: dl_user_guide.md
     - Introduction to Semantics and Ontologies: 'intro_sem.md'
     - Semantics in the Film-making industry: semInFilms.md
     - Ontologies used in SCENE: ontology.md
-    - User Guide: user_guide.md
+    - SCENE-O User Guide: user_guide.md
     
 
 #
