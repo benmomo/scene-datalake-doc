@@ -1,0 +1,22 @@
+site_name: SCENE Ontology
+site_url: 'https://scene-ontology-doc.readthedocs.org'
+repo_url: 'https://github.com/benmomo/scene-ontology-doc'
+site_description: 'SCENE Ontology Tools Documentation Hub'
+site_author: 'Benjamin Molina'
+
+docs_dir: 'docs'
+theme: readthedocs
+nav:
+    - Home: 'index.md'
+    - Introduction to Semantics and Ontologies: 'intro_sem.md'
+    - Semantics in the Film-making industry: semInFilms.md
+    - Ontologies used in SCENE: ontology.md
+    - User Guide: user_guide.md
+    
+
+#
+#markdown_extensions: [toc,fenced_code]
+#extra_css: ["https://fiware.org/style/fiware_readthedocs.css"]
+
+extra_css: 
+    - css/scene_readthedocs.css
