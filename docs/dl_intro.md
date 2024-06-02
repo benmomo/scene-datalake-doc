@@ -33,8 +33,12 @@ Let’s first focus on the tools. Considering the previous definitions (descript
 
 |Data Lake (staging & preparation)|Aspect|Data warehouse (serving, security & compliance)|
 |---|---|---|
-|Structured, semi-structured, unstructured, raw/binary,Batch processing, Data refinement/cleaning |**Data**|Structured, processed, Low latency, Complex joins.|
-|Schema-on-read |**Processing**|Schema-on-write.|
+|Structured, semi-structured, unstructured, raw/binary,Batch processing, Data refinement/cleaning|**Data**|Structured, processed, Low latency, Complex joins.|
+|Schema-on-read|**Processing**|Schema-on-write.|
+|Designed for Low-cost storage (store older/backup data)|**Storage**|Expensive for large data volumes.|
+|Highly agile, reconfiguration feasible|**Agility**|Less agile, reconfiguration typically not feasible (fixed).|
+|Maturing (relatively new tech)|**Security**|Mature technology.|
+|Data scientists (sandbox for data exploration)|**Users**|Business professionals (Dashboards).|
 
 
 
