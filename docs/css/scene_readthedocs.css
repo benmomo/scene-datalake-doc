@@ -770,13 +770,13 @@ tr {
 
 .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td {
   background-color: #F5F5F5;
-  font-size: 100% !important;
+  font-size: 15px !important;
 }
 
 .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td img {
   /*background-color: transparent;*/
   background-color: #EBE8F4;
-  font-size: 100% !important;
+  font-size: 15px !important;
   border-style: none;
 }
 
@@ -798,7 +798,7 @@ th {
   /*background-color: #002e67;*/
   background-color: #6E6199;
   color: #fff;
-  border-color: #fff !important;
+  border-color: #6E6199 !important;
   font-weight: 500 !important;
   font-size: 16px !important;
   font-weight: bold;
