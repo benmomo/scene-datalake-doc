@@ -3,6 +3,7 @@
 <div align="justify">
 This documentation explores in detail the multidimensional Data Lakes and the SCENE Ontology as one of the main components of the SCENE architecture. To access the SCENE project website, click [here](https://thesceneproject.eu/).
 </div>
+
 <div align="justify">
 This documentation explores in detail the multidimensional Data Lakes and the SCENE Ontology as one of the main components of the SCENE architecture. To access the SCENE project website, click <a href="https://thesceneproject.eu/">here </a>.
 </div>
