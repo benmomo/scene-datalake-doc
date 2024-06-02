@@ -1,8 +1,9 @@
 # Data Lake Introduction
 
 <div align="justify">
-In the rapidly evolving landscape of data management, a common challenge emerges: the proliferation of diverse and sometimes **overlapping terminology**. As organizations strive to harness the **power of data** for informed decision-making, they encounter a large set of terms like **data lake, data warehouse, data mart, data fabric, data lake house**, and many more. <br/>
+In the rapidly evolving landscape of data management, a common challenge emerges: the proliferation of diverse and sometimes **overlapping terminology**. As organizations strive to harness the <strong>power of data<strong> for informed decision-making, they encounter a large set of terms like **data lake, data warehouse, data mart, data fabric, data lake house**, and many more. <br/>
 These terms often represent distinct concepts, but their boundaries can blur, causing **confusion** and miscommunication among data professionals and stakeholders. Hence, a comprehensive reference terminology seems sensible to not only define these concepts but also establish clear boundaries and relationships among them. A summary reference table is provided in the Table below. 
+</div>
 
 |Concept|Description|
 |---|---|
@@ -10,5 +11,5 @@ These terms often represent distinct concepts, but their boundaries can blur, ca
 |**Data Warehouse** |- Data repository for **filtered** (processed) and **structured** data with a **specific** purpose;<br/><br/> -	Typical target users are **business**-oriented people (**decision-making**);<br/><br/> -	Serves as **single source of truth** for a company across multiple knowledge domains;<br/><br/> - Source data (transactional systems, relational DBs) are converted from raw to high-quality data via **ETL** (Extract, Transform and Load) tools;<br/><br/> - Changes are **less flexible** and **less typical** than for data lakes;<br/><br/> -	**Pros**: data already processed saving disk size, data useful for non-technical, high-performance for queries, governance model more robust (compared to data lake);<br/><br/> - **Cons**: cost (compared to data lake), none to very limited support to unstructured data, delay until ‘fresh’ processed data arrives (limitation for RT).|
 |**Data Mart** |- **Subset** of Data warehouse more specific to a **particular domain** (e.g., finance).|
 
-</div>
+
 ## TBC
