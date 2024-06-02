@@ -49,5 +49,8 @@ Data lakes can be useful under different generic scenarios, as presented in the 
 |Extended customer analysis|Analysis of user behavior through all their possible interactions (coming from various sources).|
 |Centralized Discovery|Single centralized discovery engine for discovering and managing published datasets.|
 
+<div align="justify">
+Another aspect to reflect on is the relationship between <strong>data lakes</strong> and <strong>data mesh</strong>. Initially, when <strong>Big Data</strong> started to be a hype, there was a general <strong>market trend</strong> to store all sorts of data into a common <strong>centralized repository</strong> (e.g., data lake) and check later their <strong>potential</strong> through analytics.
+</div>
 
 ## TBC
