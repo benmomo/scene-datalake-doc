@@ -769,7 +769,7 @@ tr {
 }
 
 .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td {
-  background-color: #e5f5f7;
+  background-color: #F5F5F5;
 }
 
 .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td img {
