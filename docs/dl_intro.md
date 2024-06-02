@@ -81,5 +81,5 @@ Finally, besides describing the different technological approaches to manage dat
 |**1. Resctive**|Structured data is mainly managed locally and used reactively.|
 |**2. Informative**|Structured data is managed and analysed centrally to inform the business department.|
 |**3. Predictive**|Captured data comes in big volumes and allows advanced analytics so as to make predictions leading to business decisions.|
-|**4. Transformative**|SData helps the company transform towards its business purpose in an efficient way by handling data anytime, anywhere .|
+|**4. Transformative**|Data helps the company transform towards its business purpose in an efficient way by handling data anytime, anywhere .|
 
