@@ -16,4 +16,18 @@ These terms often represent distinct concepts, but their boundaries can blur, ca
 |**Data mesh** |- **Architectural** and **organizational** approach to data management;<br/><br/>- **Data** is treated **as a Product**, which are broken down into data silos. Six main features: discoverable, addressable, self-describing, trustworthy, secure, interoperable;<br/><br/>- The responsibility for data is **decentralized** and is given to different teams or domains, each one in charge of their own (data) products for the **end-to-end data lifecycle** (collection, storage, quality and access);<br/><br/>- It typically includes a **Data Catalog** that helps users discover and access data products from various domains;<br/><br/>- It **scales horizontally** by adding more domain-specific teams;<br/><br/>- Requires **skilled data professionals** and **significant investment**;<br/><br/>- **Four pillars**: Domain Oriented decentralization, Data as a Product, Self-serve data infrastructure as a platform, Federated Computational Governance;<br/><br/>- **No standard definition** of a data mesh;<br/><br/>- **Difficult** to see the big picture for **combining data**;<br/><br/>- Some **implementations** by companies (Intuit, Adevinta, HelloFresh, etc.).|
 |**Database** |- **Structured collection** of data organized and stored in a computer system;<br/><br/>- Designed to **efficiently manage** and **manipulate** large volumes of data;<br/><br/>- **Ensures data integrity** and **consistency** through internal rules;<br/><br/>- Provide powerful **query languages** (e.g., SQL) to retrieve data by applying various operations on the data (filter, sort, join, etc.);<br/><br/>- Support for **concurrent access** and **transactional** management.|
 
+<div align="justify">
+Before diving into any initial comparison, it is important to split some terms from the previous table into two main sets:
+•	<strong>Tools</strong>, represented by <strong>data warehouse, data lakes</strong> and <strong>data lakehouses</strong>. A tool is a narrow technological aspect, even if it can be broken down into several subcomponents.
+•	<strong>Models/Methods</strong>, represented by <strong>data fabric</strong> and <strong>data mesh</strong>. A model is a wide general concept covering various technological and even non-technological aspects.
+
+Let’s first focus on the tools. Considering the previous definitions (descriptions), probably the most confusing terms due to potential conceptual overlap are <trong>data lakes</strong> and <strong>data warehouse</strong>. A comparison table is provided below. Anyway, there are new technological proposals merging both approaches in what it is called <strong>data lakehouse</strong>. 
+</div>
+
+|Data Lake (staging & preparation)|Aspect|Data warehouse (serving, security & compliance|
+|---|---|---|
+|Structured, semi-structured, unstructured, raw/binary,Batch processing, Data refinement/cleaning Schema-on-read |**Data**|Structured, processed, Low latency, Complex joins, Schema-on-write.|
+
+
+
 ## TBC
