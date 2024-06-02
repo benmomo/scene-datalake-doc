@@ -43,11 +43,11 @@ The <strong>third layer</strong> refers to the <strong>visualization of data</st
 From an operational point of view of the quality of the data within the data lake (more commonly used in data lakehouses), there are typically three areas or phases (see Figure below) that have various names in the data engineering terminology:
 <ul>
   <li>
-  The first phase refers to the bronze, landing or raw zone, where data is typically stored without any modification to preserve the original format. Data tagging – both automated and manual – is also included in this zone. Sometimes there is a previous supporting transient zone to facilitate the ingestion.</li>
+  The <strong>first phase</strong> refers to the <strong>bronze, landing or raw zone</strong>, where data is typically stored without any modification to preserve the original format. Data tagging – both automated and manual – is also included in this zone. Sometimes there is a previous supporting transient zone to facilitate the ingestion.</li>
   <li>
-    The second phase is the silver, refinery, stage or trusted zone, where data is filtered and cleaned according to the needs of the company (defined by data scientists). The result is data ready for processing. Here the schemas of the data are defined as needed.</li>
+    The <strong>second phase<s/trong> is the <strong>silver, refinery, stage or trusted zone</strong>, where data is filtered and cleaned according to the needs of the company (defined by data scientists). The result is data ready for processing. Here the schemas of the data are defined as needed.</li>
   <li>
-    The third phase is the gold, refined, curated or production zone with business level data (e.g. loaded into Hive) that is continuously updated and can be delivered to users and apps. Sometimes this phase is ‘externalized’ to a data warehouse.</li>
+    The <strong>third phase</strong> is the <strong>gold, refined, curated or production zone</strong> with business level data (e.g. loaded into Hive) that is continuously updated and can be delivered to users and apps. Sometimes this phase is ‘externalized’ to a data warehouse.</li>
 </ul>
 </div>
 
