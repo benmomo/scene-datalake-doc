@@ -52,7 +52,22 @@ Data lakes can be useful under different generic scenarios, as presented in the 
 <div align="justify">
 Another aspect to reflect on is the relationship between <strong>data lakes</strong> and <strong>data mesh</strong>. Initially, when <strong>Big Data</strong> started to be a hype, there was a general <strong>market trend</strong> to store all sorts of data into a common <strong>centralized repository</strong> (e.g., data lake) and check later their <strong>potential</strong> through analytics.
 </div>
+<br/>
 
 <img src="https://github.com/benmomo/scene-ontology-doc/blob/main/docs/img/dl_dataflow.jpg?raw=true" alt="Ontology spectrum" style=" display: block;  margin-left: auto;  margin-right: auto; width: 100%;" />
+
+<br/>
+
+<div align="justify">
+Though it seemed a good idea, there were some drawbacks. As data volumes grew, so did the complexity of managing these lakes, leading to <strong>data silos</strong>, inconsistent <strong>data quality</strong>, and difficulties in deriving meaningful insights. 
+From a <strong>data mesh</strong> perspective, a paradigmatic shift that recognizes the need for a more <strong>decentralized, domain-oriented</strong> approach. Unlike the centralized model of data lakes, data mesh decentralizes data ownership, empowering individual domain teams to treat data as a product. This transformation is driven by the recognition that domain experts <strong>understand their data best</strong> and can <strong>manage</strong> it effectively. By fostering a <strong>culture of ownership, accountability, and collaboration</strong>, data mesh not only resolves the challenges of data lakes but also unleashes the potential of diverse, high-quality data. It allows organizations to <strong>adapt swiftly</strong> to changing business needs, democratize data access, and foster innovation by enabling cross-functional teams to seamlessly collaborate, transforming raw data into valuable insights. This shift is not just technological but also cultural, acknowledging that the future of data lies in the hands of those who understand it most intimately – the experts within the domains.
+Data mesh can be seen as an <strong>evolution</strong> of data lakes, not a replacement. This means that data lakes already have their meaning and usefulness as a first phase, <strong>facilitating</strong> the way towards the data mesh, which should be considered as a medium or long-term step. The <strong>SCENE project</strong> is focussed on data lakes and this first phase, considering the immature (technological) status of the film-making industry, at least for the majority of the main stakeholders who have limited IT knowledge and/or resources. Additionally, <strong>data lakes pave the way towards data mesh</strong> by identifying the different domains and subdomains for data treatment and their interactions across the whole film pipeline (pre-production, production, post-proc, distribution). Moreover, considering the <strong>evolution</strong> of data approaches in the last 40 years (see Figure below), it seems more sensible to focus on a <strong>data lakehouse</strong>, as an <strong>extension</strong> of a data lake, still centralised and conceptually more similar to a data mesh
+</div>
+
+br/>
+
+<img src="https://github.com/benmomo/scene-ontology-doc/blob/main/docs/img/dl_evolution.jpg?raw=true" alt="Ontology spectrum" style=" display: block;  margin-left: auto;  margin-right: auto; width: 100%;" />
+
+<br/>
 
 ## TBC
