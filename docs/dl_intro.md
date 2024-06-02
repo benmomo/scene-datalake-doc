@@ -40,6 +40,14 @@ Let’s first focus on the tools. Considering the previous definitions (descript
 |Maturing (relatively new tech)|**Security**|Mature technology.|
 |Data scientists (sandbox for data exploration)|**Users**|Business professionals (Dashboards).|
 
+Data lakes can be useful under different generic scenarios, as presented in the Table below
+
+|Scenario|Description|
+|---|---|
+|Support for traditional and emerging data sources|Analyze in real-time information (huge data) from various origins: customer, demographics, employee, social data, external data, etc.|
+|Data exploration sandbox|Capacity to retrieve specific datasets and attributes from the whole data store through filtering techniques, to be later used in analytic tools.|
+|Extended customer analysis|Analysis of user behavior through all their possible interactions (coming from various sources).|
+|Centralized Discovery|Single centralized discovery engine for discovering and managing published datasets.|
 
 
 ## TBC
