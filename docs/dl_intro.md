@@ -1,9 +1,10 @@
 # Data Lake Introduction
 
 <div align="justify">
-In the rapidly evolving landscape of data management, a common challenge emerges: the proliferation of diverse and sometimes **overlapping terminology**. As organizations strive to harness the <strong>power of data</strong> for informed decision-making, they encounter a large set of terms like <strong>data lake, data warehouse, data mart, data fabric, data lake house</strong>, and many more. <br/>
+In the rapidly evolving landscape of data management, a common challenge emerges: the proliferation of diverse and sometimes <strong>overlapping terminology</strong>. As organizations strive to harness the <strong>power of data</strong> for informed decision-making, they encounter a large set of terms like <strong>data lake, data warehouse, data mart, data fabric, data lake house</strong>, and many more. <br/>
 These terms often represent distinct concepts, but their boundaries can blur, causing <strong>confusion</strong> and miscommunication among data professionals and stakeholders. Hence, a comprehensive reference terminology seems sensible to not only define these concepts but also establish clear boundaries and relationships among them. A summary reference table is provided in the Table below. 
 </div>
+<br/>
 
 |Concept|Description|
 |---|---|
