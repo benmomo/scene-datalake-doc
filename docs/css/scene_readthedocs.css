@@ -766,6 +766,7 @@ h4>code {
 tr {
  /*background-color: #f4fbfc !important;*/
  background-color: #ffffff !important;
+ font-size: 15px !important;
 }
 
 .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td {
