@@ -30,6 +30,7 @@ Let’s first focus on the tools. Considering the previous definitions (descript
 </div>
 
 <br/>
+
 |Data Lake (staging & preparation)|Aspect|Data warehouse (serving, security & compliance)|
 |---|---|---|
 |Structured, semi-structured, unstructured, raw/binary,Batch processing, Data refinement/cleaning |**Data**|Structured, processed, Low latency, Complex joins.|
