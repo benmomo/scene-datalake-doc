@@ -783,6 +783,7 @@ tr {
 
 .rst-content table.docutils td {
   white-space: break-spaces;
+  font-size: 15px !important;
 }
 
 .rst-content table.docutils th {
