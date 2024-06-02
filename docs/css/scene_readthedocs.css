@@ -770,11 +770,13 @@ tr {
 
 .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td {
   background-color: #F5F5F5;
+  font-size: 100% !important;
 }
 
 .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td img {
   /*background-color: transparent;*/
   background-color: #EBE8F4;
+  font-size: 100% !important;
   border-style: none;
 }
 
