@@ -18,13 +18,19 @@ These terms often represent distinct concepts, but their boundaries can blur, ca
 
 <div align="justify">
 Before diving into any initial comparison, it is important to split some terms from the previous table into two main sets:
-•	<strong>Tools</strong>, represented by <strong>data warehouse, data lakes</strong> and <strong>data lakehouses</strong>. A tool is a narrow technological aspect, even if it can be broken down into several subcomponents.
-•	<strong>Models/Methods</strong>, represented by <strong>data fabric</strong> and <strong>data mesh</strong>. A model is a wide general concept covering various technological and even non-technological aspects.
-
+<ul>
+  <li>
+    <strong>Tools</strong>, represented by <strong>data warehouse, data lakes</strong> and <strong>data lakehouses</strong>. A tool is a narrow technological aspect, even if it can be broken down into several subcomponents.
+  </li>
+  <li>
+     <strong>Models/Methods</strong>, represented by <strong>data fabric</strong> and <strong>data mesh</strong>. A model is a wide general concept covering various technological and even non-technological aspects.
+  </li>
+</ul>
 Let’s first focus on the tools. Considering the previous definitions (descriptions), probably the most confusing terms due to potential conceptual overlap are <trong>data lakes</strong> and <strong>data warehouse</strong>. A comparison table is provided below. Anyway, there are new technological proposals merging both approaches in what it is called <strong>data lakehouse</strong>. 
 </div>
 
-|Data Lake (staging & preparation)|Aspect|Data warehouse (serving, security & compliance|
+<br/>
+|Data Lake (staging & preparation)|Aspect|Data warehouse (serving, security & compliance)|
 |---|---|---|
 |Structured, semi-structured, unstructured, raw/binary,Batch processing, Data refinement/cleaning Schema-on-read |**Data**|Structured, processed, Low latency, Complex joins, Schema-on-write.|
 
