@@ -773,7 +773,8 @@ tr {
 }
 
 .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td img {
-  background-color: transparent;
+  /*background-color: transparent;*/
+  background-color: #EBE8F4;
   border-style: none;
 }
 
