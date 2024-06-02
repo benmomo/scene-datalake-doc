@@ -44,13 +44,15 @@ Data lakes can be useful under different generic scenarios, as presented in the 
 
 |Scenario|Description|
 |---|---|
-|Support for traditional and emerging data sources|Analyze in real-time information (huge data) from various origins: customer, demographics, employee, social data, external data, etc.|
-|Data exploration sandbox|Capacity to retrieve specific datasets and attributes from the whole data store through filtering techniques, to be later used in analytic tools.|
-|Extended customer analysis|Analysis of user behavior through all their possible interactions (coming from various sources).|
-|Centralized Discovery|Single centralized discovery engine for discovering and managing published datasets.|
+|**Support for traditional and emerging data sources**|Analyze in real-time information (huge data) from various origins: customer, demographics, employee, social data, external data, etc.|
+|**Data exploration sandbox**|Capacity to retrieve specific datasets and attributes from the whole data store through filtering techniques, to be later used in analytic tools.|
+|**Extended customer analysis**|Analysis of user behavior through all their possible interactions (coming from various sources).|
+|**Centralized Discovery**|Single centralized discovery engine for discovering and managing published datasets.|
 
 <div align="justify">
 Another aspect to reflect on is the relationship between <strong>data lakes</strong> and <strong>data mesh</strong>. Initially, when <strong>Big Data</strong> started to be a hype, there was a general <strong>market trend</strong> to store all sorts of data into a common <strong>centralized repository</strong> (e.g., data lake) and check later their <strong>potential</strong> through analytics.
 </div>
+
+<img src="https://github.com/benmomo/scene-ontology-doc/blob/main/docs/img/dl_dataflow.jpg?raw=true" alt="Ontology spectrum" style=" display: block;  margin-left: auto;  margin-right: auto; width: 100%;" />
 
 ## TBC
