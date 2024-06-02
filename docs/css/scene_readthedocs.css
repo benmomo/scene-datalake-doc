@@ -792,7 +792,8 @@ td {
 }
 
 th {
-  background-color: #002e67;
+  /*background-color: #002e67;*/
+  background-color: #6E6199;
   color: #fff;
   border-color: #fff !important;
   font-weight: 500 !important;
