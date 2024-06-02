@@ -29,10 +29,13 @@ From an <strong>AI perspective</strong>, the four AI typical phases map to the f
 
 From a <strong>logical perspective</strong>, and considering a <strong>Hadoop architecture</strong>, there are <strong>three</strong> layers, as depicted in the Figure below. Hadoop is a typical reference technology used in data lakes, due to the way is supports large volumes of data (Big Data).
 The <strong>first layer</strong> (input layer) considers all different <strong>input data sources</strong> that should be handled and stored. They are typically divided into: (i) traditional data that has typically been managed from the internal <strong>operational systems</strong> (ERP, CRM and billing), and (ii) emerging data sources that have been added in the last years to enhance the operational picture and better study a particular situation. These data can be either internal or external data.
-
+<br/>
 The <strong>second layer</strong> includes various tools and sublayers. First, the <strong>ingestion sublayer</strong> provides a set of converters for the different input sources, without altering the original structure; it will basically allow further <strong>search and discovery</strong> one the data is stored in the layer, typically in the form of a <strong>distributed and scalable file system</strong>.
 The <strong>third layer</strong> refers to the <strong>visualization of data</strong> and the <strong>user profiles</strong> accessing to such visualization.  In most cases, common users are data scientists, analysts, developers or administrators; however, sometimes also some specific (business) users might have access to this data, such a CEO or CTO that need to have some information as soon as possible.
 </div>
 
+<br/>
+<img src="https://github.com/benmomo/scene-ontology-doc/blob/main/docs/img/dl_arch2.jpg?raw=true" alt="Ontology spectrum" style=" display: block;  margin-left: auto;  margin-right: auto; width: 100%;" />
+<br/>
 
 
