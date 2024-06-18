@@ -48,4 +48,4 @@ It is important to note that cloud providers offer a wide variety of different s
 </div>
 <br/>
 
-<img src="https://github.com/benmomo/scene-ontology-doc/blob/main/docs/img/dl_imp_google_1.jpg?raw=true" alt="Google related products fro data lakes" style=" display: block;  margin-left: auto;  margin-right: auto; width: 80%;" />
+<img src="https://github.com/benmomo/scene-ontology-doc/blob/main/docs/img/dl_imp_google_1.jpg?raw=true" alt="Google related products fro data lakes" style=" display: block;  margin-left: auto;  margin-right: auto; width: 100%;" />
