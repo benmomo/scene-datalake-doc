@@ -26,3 +26,26 @@ A data catalog (in a general context and not specifically related to data lakes)
 </div>
 <br/>
 
+## Cloud based approaches
+
+<div align="justify">
+This section briefly summarizes the available approaches for the most common cloud providers related to data lakes (Google, IBM, Amazon and Microsoft).
+<br/>
+Data lakes in <strong>Google Cloud</strong> are typically offered as a suite with other services (summary table below).
+</div>
+<br/>
+
+|Concept|Description|
+|---|---|
+|**DataFlow**|Unified stream and batch data processing that's serverless, fast, and cost-effective <br/> [https://cloud.google.com/dataflow/](https://cloud.google.com/dataflow/) .|
+|**Cloud Data Fusion**|Fully managed, cloud-native data integration at any scale to build ETL/ELT pipelines.<br/>[https://cloud.google.com/data-fusion](https://cloud.google.com/data-fusion) .|
+|**BigQuery**|Serverless, highly scalable and cost-effective enterprise data warehouse designed for business agility (built-in ML/AI and BI for insights). <br/>[https://cloud.google.com/bigquery/](https://cloud.google.com/bigquery/)|
+|**Dataproc**|Fully managed and highly scalable service for running Apache Hadoop, Apache Spark, Apache Flink, Presto, and 30+ open source tools and frameworks <br/>[https://cloud.google.com/dataproc/?hl=en](https://cloud.google.com/dataproc/?hl=en) |
+|**Cloud storage** |Globally, unified, scalable and durable object reference service for storing unstructured data. <br/>[https://cloud.google.com/storage/](https://cloud.google.com/storage) |
+
+<div align="justify">
+It is important to note that cloud providers offer a wide variety of different services and tools, which may relate to each other, and listing all of them is beyond the scope of this document. For Google, one can find a useful description through its <a href="https://cloud.google.com/docs?hl=en">Google cloud documentation</a>. From the point of view of data lakes and related tools, the most common services and tools are depicted in the Figure below. For some data lake design patterns on Google (full stack, unified batch/streaming model, lambda streaming) the reader can check <a href="https://www.unifieddatascience.com/data-lake-design-patterns-on-google-cloud">here</a>.
+</div>
+<br/>
+
+<img src="https://github.com/benmomo/scene-ontology-doc/blob/main/docs/img/dl_imp_google_1.jpg?raw=true" alt="Google related products fro data lakes" style=" display: block;  margin-left: auto;  margin-right: auto; width: 80%;" />
