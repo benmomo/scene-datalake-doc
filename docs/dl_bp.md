@@ -1,7 +1,26 @@
 # Data Lake Best Practices
 
+<div align="justify">
+Considering the diversity of possible configurations for data lakes, it seems relevant to provide a set of recommendations to follow whenever a data lake is to be built within an organization. These best practices intend to generate awareness in the different steps or building blocks of the data lake, and are summarized in the Table below. 
+</div>
+<br/>
+
+|Best practice item|Description|
+|---|---|
+|**Check closer Data ingestion** |Do not propose a data lake architecture before deeply analysing the input data requirements: size, performance, format, etc., as it can have a great impact on the performance later.<br/>Additionally, knowing the input data is a crucial hint to understand how an organization works and what type of data are relevant.
+There is a common statement about data lakes: “store now, analyse later” that should not be followed unless you want to design completely blind.|
+|**Keep the raw data** |Try to preserve one logical area of the data lake for the raw data, without any transformation (except, maybe, personal information for GDPR reasons). Keeping the original data format allows to have a clear unified starting point, which can be later processed on different cleansing or filtering data pipelines, for different users and purposes.|
+|**Favour Computing over storage** |Data storage has become relatively cheap in the current years, and easy to scale. Computing performance might be tricky as the data grows. Therefore, it is practical to store multiple copies of the same data if the overall performance is increased. This means that the same data might be transformed into different formats suitable (optimized) for the final application which is consuming it (e.g. two different ML models)|
+|**Keep Retention policy** |Most of the data might not be stored forever in the data lake. After a certain (configurable) period, some pieces of data might not be relevant at all (no application is making use of them) and should be deleted/discarded. There are two main reasons for that: (i) cost and (ii) compliance.
+On the one hand, data storage is relatively cheap compared to data warehouses, but not free. On the other hand, some regulatory requirement (e.g., GDPR) might dictate the deletion of personal data after a certain period or based on user’s request.|
+|**Partition the data** |By partitioning the data the query costs are reduced, similar as for databases where you create multiple tables. A partition is basically a logical entity (e.g. a Hive meta store item mapping to a folder on a S3 bucket).<br/> A common approach is partition by timestamp (minute, hour, day) depending on the needed granularity of the target applications. This time partitioning is also helpful for enforcing automated data retention policies, as data might become useless after a period of time.|
+|**Readable file format** |If possible, it is highly recommended to use open-source formats, rather than proprietary, such as Apache Parquet or ORC (commonly used in Hadoop ecosystems). Parquet is typically better for analytical workloads and large and complex data structures. ORC is intended for write-intensive tasks and data modifications.<br/>
+Additionally, columnar storage makes data typically easier to read (for analytics applications). Apache Parquet and ORC are column-based standards, whereas Apache Avro is file-based (more suitable for non-regular queries and ETL pipelines) <br/>For compression mechanisms applied to data for cost reasons, it is typically better to use a ‘weak’ compression standard in order to speed up the decompression and use compute power in the real analytics. For example, Parquet supports the following compression methods: uncompressed, fast, gzip, lzo, brotli,lz4,zstd.|
+|**Merge small files** |Data produced by data streams and logs might produce a huge number of small events every day. For performance reasons, it is wiser to merge or compact these files into one single one.|
+|**Ensure access control and governance** |Data is probably one of the most valuable assets of an organization, and therefore it should be protected by some sort of access control list feature. It is critical to ensure who is allowed to access (and modify) the data, and significant time should be dedicated to this task.
+Data governance features might also help here, as a good management of data with a proper data catalog improves the availability (discoverability) of the data so that it can be properly used and audited.|
+|**Be adaptive and flexible** |Besides data requirements, it is important to consider the user’s skills when designing the data lake. A complex design architecture might appear unapproachable for a customer. You might adapt the initial (complex) design into a simpler one so that the user becomes familiar with it while at the same time remaining open and modular to additional enhancements when there is a need to scale further or add new features.|
 
 
----
 
-## TBC
+
