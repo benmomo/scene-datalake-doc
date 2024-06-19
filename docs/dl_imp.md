@@ -49,3 +49,26 @@ It is important to note that cloud providers offer a wide variety of different s
 <br/>
 
 <img src="https://github.com/benmomo/scene-ontology-doc/blob/main/docs/img/dl_imp_google_1.jpg?raw=true" alt="Google related products fro data lakes" style=" display: block;  margin-left: auto;  margin-right: auto; width: 100%;" />
+
+<br/>
+
+
+<div align="justify">
+Data lakes by <strong>IBM</strong> are offered within the watsonx family of products (AI and data platform)
+</div>
+<br/>
+
+|Concept|Description|
+|---|---|
+|**Watsonx.ai studio**|New foundational models, generative AI and machine learning <br/> [https://www.ibm.com/products/watsonx-ai](https://www.ibm.com/products/watsonx-ai) .|
+|**Watsonx.data**|Fit-for-purpose data store, built on an open lakehouse architecture.<br/>[https://www.ibm.com/products/watsonx-data](https://www.ibm.com/products/watsonx-data) .|
+|**BigQuery**|Serverless, highly scalable and cost-effective enterprise data warehouse designed for business agility (built-in ML/AI and BI for insights). <br/>[https://cloud.google.com/bigquery/](https://cloud.google.com/bigquery/)|
+|**Watsonx.governance toolkit**|Accelerate AI workflows built with responsibility, transparency and explainability <br/>[https://www.ibm.com/products/watsonx-governance](https://www.ibm.com/products/watsonx-governance) |
+
+
+<div align="justify">
+The general process is depicted in the Figure below for a base solution, but depending on the application scope (Big Data, Logging, IoT) it may differ slightly. For example, in a Big Data application, all data is ingested into IBM Cloud Object Storage (step 1- grey circle in the middle of the Figure), a service able to store huge amounts of data. Afterwards, the IBM Analytics Engine provides deployment of Hadoop and Spark to analyse the data (step 2). Finally, the Watson Data Science Workbench is used to analyse the data, build AI models, provide insights and dashboards (step 3).
+</div>
+<br/>
+
+<img src="https://github.com/benmomo/scene-ontology-doc/blob/main/docs/img/dl_imp_ibm_1.jpg?raw=true" alt="IBM cloud architecture. Source : IBM" style=" display: block;  margin-left: auto;  margin-right: auto; width: 100%;" />
