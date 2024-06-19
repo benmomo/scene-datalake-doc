@@ -78,3 +78,25 @@ The vision of IBM is quite flexible and can coexist and integrate with other pla
 <br/>
 
 <img src="https://github.com/benmomo/scene-ontology-doc/blob/main/docs/img/dl_imp_ibm_2.jpg?raw=true" alt="IBM cloud architecture. Source : IBM" style=" display: block;  margin-left: auto;  margin-right: auto; width: 100%;" />
+
+<br/>
+
+<div align="justify">
+Data lakes by <strong>AWS</strong> are offered as a set of services combining data storage and analytics solutions.
+</div>
+<br/>
+
+|Concept|Description|
+|---|---|
+|**AWS Lambda**|Compute service to run code in an automated self-managed environment (servers, clusters), for serverless applications <br/> [https://aws.amazon.com/lambda/](https://aws.amazon.com/lambda/)|
+|**Amazon OpenSearch Service**|Provides robust search (and analytics) capabilities (log files, messages, metrics, config info, documents) , including built-in OpenSearch dashboards and Kibana <br/>[https://aws.amazon.com/opensearch-service/](https://aws.amazon.com/opensearch-service/)|
+|**Amazon Cognito**|User authentication and access control <br/>[https://aws.amazon.com/cognito/](https://aws.amazon.com/cognito/) |
+|**AWS Glue**|Serverless service for data transformation (discovery, preparation, integration) that allows building and monitoring ETL pipelines for data lakes <br/> [https://aws.amazon.com/glue/](https://aws.amazon.com/glue/)|
+|**Amazon Athena**|Serverless analytics service able to analyse huge amounts of data (built on open-source Trino and Apache Spark) <br/>[https://aws.amazon.com/athena/](https://aws.amazon.com/athena/)|
+|**Amazon S3**|Simple Storage Service to store and protect data for various use cases (data lakes, back-up, low-cost archiving, etc.) <br/>[https://aws.amazon.com/s3/](https://aws.amazon.com/s3/) |
+|**Amazon DynamoDB**|Serverless, NoSQL, fully managed database <br/>[https://aws.amazon.com/dynamodb/](https://aws.amazon.com/dynamodb/) |
+
+<div align="justify">
+Although the basic and nuclear core of the data lake is Amazon S3, a bunch of additional services are usually employed by AWS users to facilitate their work in tagging, searching, sharing, transforming and analysing the data. Siemens use AWS services to build what they call <a href="https://youtu.be/C0T5xEWQz3g?si=Ih3TPHFfDFCLhEOk">[Data Lake 2 Go</a>. Toyota is another AWS client through its <a href="https://aws.amazon.com/blogs/big-data/enhancing-customer-safety-by-leveraging-the-scalable-secure-and-cost-optimized-toyota-connected-data-lake/">Connected Data Lake </a>
+</div>
+<br/>
