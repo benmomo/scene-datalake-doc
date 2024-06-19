@@ -98,7 +98,7 @@ Data lakes by <strong>AWS</strong> are offered as a set of services combining da
 
 <div align="justify">
 Although the basic and nuclear core of the data lake is Amazon S3, a bunch of additional services are usually employed by AWS users to facilitate their work in tagging, searching, sharing, transforming and analysing the data. Siemens use AWS services to build what they call <a href="https://youtu.be/C0T5xEWQz3g?si=Ih3TPHFfDFCLhEOk">Data Lake 2 Go</a>. Toyota is another AWS client through its <a href="https://aws.amazon.com/blogs/big-data/enhancing-customer-safety-by-leveraging-the-scalable-secure-and-cost-optimized-toyota-connected-data-lake/">Connected Data Lake </a>
-A simple example of data lakes on AWS is provided in the Figure below (source: <a href="https://aws.amazon.com/solutions/implementations/data-lake-solution/?nc1=h_ls">Amazon</a>), which also includes an <a href="https://github.com/aws-solutions/aws-data-lake-solution">example code in GitHub</a>
+A simple example of data lakes on AWS is provided in the Figure below (source: <a href="https://aws.amazon.com/solutions/implementations/data-lake-solution/?nc1=h_ls">Amazon</a>), which also includes an <a href="https://github.com/aws-solutions/aws-data-lake-solution">example code in GitHub</a>.
 </div>
 <br/>
 
@@ -112,8 +112,7 @@ Data lakes by <strong>Microsoft</strong> are also offered as a set of tools that
 
 Concept|Description|
 |---|---|
-|**Azure Data Lake Storage (Gen 2)**|Single storage platform to integrate all data silos.
-Gen2 refers to the current implementation, the previous one (Gen1) will be retired on March 2024. Gen2 converges the capabilities of e Gen1 with Azure Blob Storage.<br/> [https://azure.microsoft.com/en-us/products/storage/data-lake-storage/](https://azure.microsoft.com/en-us/products/storage/data-lake-storage/)|
+|**Azure Data Lake Storage (Gen 2)**|Single storage platform to integrate all data silos. Gen2 refers to the current implementation, the previous one (Gen1) will be retired on March 2024. Gen2 converges the capabilities of e Gen1 with Azure Blob Storage.<br/> [https://azure.microsoft.com/en-us/products/storage/data-lake-storage/](https://azure.microsoft.com/en-us/products/storage/data-lake-storage/)|
 |**Azure Synapse**|Distributed system for storing and analysing large datasets. It typically uses PolyBase (data virtualization feature for SQL server) to load data from Azure Data Lake Storage <br/>[https://azure.microsoft.com/en-us/products/synapse-analytics/](https://azure.microsoft.com/en-us/products/synapse-analytics/)|
 |**Data Factory**|Fully managed, serverless data integration service to construct ETL or ELT process before loading data in Azure Synapse <br/>[https://azure.microsoft.com/en-us/products/data-factory/](https://azure.microsoft.com/en-us/products/data-factory/) |
 |**Microsoft Entra ID**|Formerly known as Active Directory, it is a cloud identity and access management solution <br/> [https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)|
