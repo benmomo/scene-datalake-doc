@@ -62,7 +62,6 @@ Data lakes by <strong>IBM</strong> are offered within the watsonx family of prod
 |---|---|
 |**Watsonx.ai studio**|New foundational models, generative AI and machine learning <br/> [https://www.ibm.com/products/watsonx-ai](https://www.ibm.com/products/watsonx-ai) .|
 |**Watsonx.data**|Fit-for-purpose data store, built on an open lakehouse architecture.<br/>[https://www.ibm.com/products/watsonx-data](https://www.ibm.com/products/watsonx-data) .|
-|**BigQuery**|Serverless, highly scalable and cost-effective enterprise data warehouse designed for business agility (built-in ML/AI and BI for insights). <br/>[https://cloud.google.com/bigquery/](https://cloud.google.com/bigquery/)|
 |**Watsonx.governance toolkit**|Accelerate AI workflows built with responsibility, transparency and explainability <br/>[https://www.ibm.com/products/watsonx-governance](https://www.ibm.com/products/watsonx-governance) |
 
 
