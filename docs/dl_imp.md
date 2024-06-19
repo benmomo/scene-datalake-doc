@@ -67,8 +67,15 @@ Data lakes by <strong>IBM</strong> are offered within the watsonx family of prod
 
 
 <div align="justify">
-The general process is depicted in the Figure below for a base solution, but depending on the application scope (Big Data, Logging, IoT) it may differ slightly. For example, in a Big Data application, all data is ingested into IBM Cloud Object Storage (step 1- grey circle in the middle of the Figure), a service able to store huge amounts of data. Afterwards, the IBM Analytics Engine provides deployment of Hadoop and Spark to analyse the data (step 2). Finally, the Watson Data Science Workbench is used to analyse the data, build AI models, provide insights and dashboards (step 3).
+The general process is depicted in the Figure below (source:IBM) for a base solution, but depending on the application scope (Big Data, Logging, IoT) it may differ slightly. For example, in a Big Data application, all data is ingested into IBM Cloud Object Storage (step 1- grey circle in the middle of the Figure), a service able to store huge amounts of data. Afterwards, the IBM Analytics Engine provides deployment of Hadoop and Spark to analyse the data (step 2). Finally, the Watson Data Science Workbench is used to analyse the data, build AI models, provide insights and dashboards (step 3).
 </div>
 <br/>
 
 <img src="https://github.com/benmomo/scene-ontology-doc/blob/main/docs/img/dl_imp_ibm_1.jpg?raw=true" alt="IBM cloud architecture. Source : IBM" style=" display: block;  margin-left: auto;  margin-right: auto; width: 100%;" />
+
+<div align="justify">
+The vision of IBM is quite flexible and can coexist and integrate with other platforms, such as AWS, as depicted in the Figure below (source:IBM). It is an attempt to align and support hybrid environments (public, private and edge environments).  IBM promotes the use of data lakehouses, as a combination of advantages from data warehouses and data lakes, even in hybrid-cloud scenarios
+</div>
+<br/>
+
+<img src="https://github.com/benmomo/scene-ontology-doc/blob/main/docs/img/dl_imp_ibm_2.jpg?raw=true" alt="IBM cloud architecture. Source : IBM" style=" display: block;  margin-left: auto;  margin-right: auto; width: 100%;" />
