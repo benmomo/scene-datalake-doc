@@ -98,5 +98,8 @@ Data lakes by <strong>AWS</strong> are offered as a set of services combining da
 
 <div align="justify">
 Although the basic and nuclear core of the data lake is Amazon S3, a bunch of additional services are usually employed by AWS users to facilitate their work in tagging, searching, sharing, transforming and analysing the data. Siemens use AWS services to build what they call <a href="https://youtu.be/C0T5xEWQz3g?si=Ih3TPHFfDFCLhEOk">Data Lake 2 Go</a>. Toyota is another AWS client through its <a href="https://aws.amazon.com/blogs/big-data/enhancing-customer-safety-by-leveraging-the-scalable-secure-and-cost-optimized-toyota-connected-data-lake/">Connected Data Lake </a>
+A simple example of data lakes on AWS is provided in the Figure below, which also includes an <a href="https://github.com/aws-solutions/aws-data-lake-solution">example code in GitHub</a>
 </div>
 <br/>
+
+<img src="https://github.com/benmomo/scene-ontology-doc/blob/main/docs/img/dl_imp_aws_1.jpg?raw=true" alt="IBM cloud architecture. Source : IBM" style=" display: block;  margin-left: auto;  margin-right: auto; width: 100%;" />
