@@ -66,18 +66,18 @@ Data lakes by <strong>IBM</strong> are offered within the watsonx family of prod
 
 
 <div align="justify">
-The general process is depicted in the Figure below (source:IBM) for a base solution, but depending on the application scope (Big Data, Logging, IoT) it may differ slightly. For example, in a Big Data application, all data is ingested into IBM Cloud Object Storage (step 1- grey circle in the middle of the Figure), a service able to store huge amounts of data. Afterwards, the IBM Analytics Engine provides deployment of Hadoop and Spark to analyse the data (step 2). Finally, the Watson Data Science Workbench is used to analyse the data, build AI models, provide insights and dashboards (step 3).
+The general process is depicted in the Figure below (source:<a href="IBM data integration with other cloud systems">IBM</a>) for a base solution, but depending on the application scope (Big Data, Logging, IoT) it may differ slightly. For example, in a Big Data application, all data is ingested into IBM Cloud Object Storage (step 1- grey circle in the middle of the Figure), a service able to store huge amounts of data. Afterwards, the IBM Analytics Engine provides deployment of Hadoop and Spark to analyse the data (step 2). Finally, the Watson Data Science Workbench is used to analyse the data, build AI models, provide insights and dashboards (step 3).
 </div>
 <br/>
 
-<img src="https://github.com/benmomo/scene-ontology-doc/blob/main/docs/img/dl_imp_ibm_1.jpg?raw=true" alt="IBM cloud architecture. Source : IBM" style=" display: block;  margin-left: auto;  margin-right: auto; width: 100%;" />
+<img src="https://github.com/benmomo/scene-ontology-doc/blob/main/docs/img/dl_imp_ibm_1.jpg?raw=true" alt="IBM cloud architecture" style=" display: block;  margin-left: auto;  margin-right: auto; width: 100%;" />
 
 <div align="justify">
-The vision of IBM is quite flexible and can coexist and integrate with other platforms, such as AWS, as depicted in the Figure below (source:IBM). It is an attempt to align and support hybrid environments (public, private and edge environments).  IBM promotes the use of data lakehouses, as a combination of advantages from data warehouses and data lakes, even in hybrid-cloud scenarios
+The vision of IBM is quite flexible and can coexist and integrate with other platforms, such as AWS, as depicted in the Figure below (source:<a href="https://developer.ibm.com/articles/awb-ibm-watsonx-data-aws/">IBM</a>). It is an attempt to align and support hybrid environments (public, private and edge environments).  IBM promotes the use of data lakehouses, as a combination of advantages from data warehouses and data lakes, even in hybrid-cloud scenarios
 </div>
 <br/>
 
-<img src="https://github.com/benmomo/scene-ontology-doc/blob/main/docs/img/dl_imp_ibm_2.jpg?raw=true" alt="IBM cloud architecture. Source : IBM" style=" display: block;  margin-left: auto;  margin-right: auto; width: 100%;" />
+<img src="https://github.com/benmomo/scene-ontology-doc/blob/main/docs/img/dl_imp_ibm_2.jpg?raw=true" alt="IBM data integration with other cloud systems" style=" display: block;  margin-left: auto;  margin-right: auto; width: 100%;" />
 
 <br/>
 
@@ -98,8 +98,40 @@ Data lakes by <strong>AWS</strong> are offered as a set of services combining da
 
 <div align="justify">
 Although the basic and nuclear core of the data lake is Amazon S3, a bunch of additional services are usually employed by AWS users to facilitate their work in tagging, searching, sharing, transforming and analysing the data. Siemens use AWS services to build what they call <a href="https://youtu.be/C0T5xEWQz3g?si=Ih3TPHFfDFCLhEOk">Data Lake 2 Go</a>. Toyota is another AWS client through its <a href="https://aws.amazon.com/blogs/big-data/enhancing-customer-safety-by-leveraging-the-scalable-secure-and-cost-optimized-toyota-connected-data-lake/">Connected Data Lake </a>
-A simple example of data lakes on AWS is provided in the Figure below, which also includes an <a href="https://github.com/aws-solutions/aws-data-lake-solution">example code in GitHub</a>
+A simple example of data lakes on AWS is provided in the Figure below (source: <a href="https://aws.amazon.com/solutions/implementations/data-lake-solution/?nc1=h_ls">Amazon</a>), which also includes an <a href="https://github.com/aws-solutions/aws-data-lake-solution">example code in GitHub</a>
 </div>
 <br/>
 
-<img src="https://github.com/benmomo/scene-ontology-doc/blob/main/docs/img/dl_imp_aws_1.jpg?raw=true" alt="IBM cloud architecture. Source : IBM" style=" display: block;  margin-left: auto;  margin-right: auto; width: 100%;" />
+<img src="https://github.com/benmomo/scene-ontology-doc/blob/main/docs/img/dl_imp_aws_1.jpg?raw=true" alt="AWS cloud data lake architecture example" style=" display: block;  margin-left: auto;  margin-right: auto; width: 100%;" />
+<br/>
+
+<div align="justify">
+Data lakes by <strong>Microsoft</strong> are also offered as a set of tools that not only target storage services.
+</div>
+<br/>
+
+Concept|Description|
+|---|---|
+|**Azure Data Lake Storage (Gen 2)**|Single storage platform to integrate all data silos.
+Gen2 refers to the current implementation, the previous one (Gen1) will be retired on March 2024. Gen2 converges the capabilities of e Gen1 with Azure Blob Storage.<br/> [https://azure.microsoft.com/en-us/products/storage/data-lake-storage/](https://azure.microsoft.com/en-us/products/storage/data-lake-storage/)|
+|**Azure Synapse**|Distributed system for storing and analysing large datasets. It typically uses PolyBase (data virtualization feature for SQL server) to load data from Azure Data Lake Storage <br/>[https://azure.microsoft.com/en-us/products/synapse-analytics/](https://azure.microsoft.com/en-us/products/synapse-analytics/)|
+|**Data Factory**|Fully managed, serverless data integration service to construct ETL or ELT process before loading data in Azure Synapse <br/>[https://azure.microsoft.com/en-us/products/data-factory/](https://azure.microsoft.com/en-us/products/data-factory/) |
+|**Microsoft Entra ID**|Formerly known as Active Directory, it is a cloud identity and access management solution <br/> [https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)|
+|**Power BI**|Suite of business analytics tools to analyse data and share insights. Power BI can either interact with Analysis Services by querying a semantic model stored, or with Azure Synapse <br/>[https://www.microsoft.com/en-us/power-platform/products/power-bi/](https://www.microsoft.com/en-us/power-platform/products/power-bi/)|
+|**Azure Purview**|This data governance service maintains a unified data catalog as well as data landscape maps. Features include automated data discovery, sensitive data classification, and data lineage <br/>[https://azure.microsoft.com/en-us/products/purview/](https://azure.microsoft.com/en-us/products/purview/) |
+|**Azure monitor**|SCollects and analyses data (e.g. performance metrics and activity logs) on environments and Azure resources <br/>[https://azure.microsoft.com/en-us/products/monitor/](https://azure.microsoft.com/en-us/products/monitor/) |
+
+<div align="justify">
+A simple example for a data lake including data management is depicted in the Figure below (source:<a href="https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/azure-purview-data-lake-estate-architecture">Microsoft</a>). Here it is important the data governance portal (MS Purview), as sometimes data lakes lack of this component or is deployed with basic features. 
+</div>
+<br/>
+
+<img src="https://github.com/benmomo/scene-ontology-doc/blob/main/docs/img/dl_imp_azure_1.jpg?raw=true" alt="MS Azure cloud data lake architecture example with data management" style=" display: block;  margin-left: auto;  margin-right: auto; width: 100%;" />
+
+<div align="justify">
+If one tries to compare all these cloud data platforms, it appears really difficult and challenging, because they are composed of a set of different components that are typically designed and deployed for specific use cases; there is no one single architecture scenario for a cloud provider and some meetings and discussions are needed between organizations and cloud provider consultants to understand the data requirements, the business goals, and develop afterwards the most suitable architecture for their needs. Anyway, just for aligning cloud components in the different data stages a summary picture is provided in the Figure below (source:<a href="https://towardsdatascience.com/modern-unified-data-architecture-38182304afcc">Modern Unified Data Architecture</a>) 
+(<i>note: some components might have been updated or renewed by cloud providers</i>).
+</div>
+<br/>
+
+<img src="https://github.com/benmomo/scene-ontology-doc/blob/main/docs/img/dl_imp_conclusion_1.jpg?raw=true" alt="Cloud components offered by GCP, AWS and Azure" style=" display: block;  margin-left: auto;  margin-right: auto; width: 100%;" />
