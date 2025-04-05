@@ -40,7 +40,7 @@ You can **create buckets** by doing the following:
 
 
 
-<!-- <img src="https://github.com/benmomo/scene-ontology-doc/blob/main/docs/img/os.jpg?raw=true" alt="Ontology spectrum" style=" display: block;  margin-left: auto;  margin-right: auto; width: 100%;" /> -->
+<img src="https://github.com/benmomo/scene-ontology-doc/blob/main/docs/img/dl_minio1.jpg?raw=true" alt="Ontology spectrum" style=" display: block;  margin-left: auto;  margin-right: auto; width: 100%;" /> 
 
 
 
