@@ -16,7 +16,7 @@ While other components (such as Apache NiFi, Node-RED, and MongoDB) provide supp
 
 
 ## Front-end
-The front-end is basically a web server (nginx) acting as proxy with a set of web page that gives access to all services related to the SCENE datalae, as depicted in the Figure below:
+The front-end is basically a web server (nginx) acting as a proxy with a set of web pages that give access to all services related to the SCENE data lake, as depicted in the Figure below:
 
   - By clicking on the **Ontology viewer** icon/link, the user will be redirected to the Ontology view, which has its own UI
   - The **Data Lake UI** redirects to the Minio Front-end. Minio represents the core part of the data lake
@@ -121,14 +121,14 @@ The next step is to create one **user**. You can **create a user** by doing the 
 After that, youn now log in into the Minio UI with his user and password.
 There is another way, which is the typical way used by applications, and it employs the API. The API is S3-compatible. Examples are provided via Jupyter Notebook
 
-## Using Jupyter Notebook (using Minio API)
+## Using the Minio API (Jupyter Notebook)
 
-There are two common ways to interact with the SCENE Data Lake programmatically using Python:
+There are two common ways to interact with the SCENE Data Lake (Minio) programmatically using Python:
 
 - **MinIO Python SDK (`minio` package)**: A dedicated library developed by the MinIO team.
 - **Boto3 (`boto3` package)**: Amazon’s official SDK for AWS services, fully compatible with S3 APIs — and therefore also works seamlessly with MinIO.
 
-In this guide, we will use **`boto3`**, which is a robust, well-documented library and often familiar to developers working with cloud environments. It can be used directly in a Jupyter Notebook to upload, download, and list files in the MinIO-powered data lake.
+In this guide, we will use **boto3**, which is a robust, well-documented library and often familiar to developers working with cloud environments. It can be used directly in a Jupyter Notebook to upload, download, and list files in the MinIO-powered data lake.
 In the front-end, just click on the **Example** list:
 
 
@@ -136,6 +136,89 @@ In the front-end, just click on the **Example** list:
 
 <br/>
 
+On the left panel, you can see a small set of files that serve as examples of using the API. The first one (01 minio_upload_file.ypynb) provides an example of basic access for uploading, listing and downloading a file
+
+```
+# 0. Load libraries and common configuration. Install necessary packages
+!pip install boto3 certifi
+
+import boto3
+from botocore.client import Config
+import os
+import ssl
+import certifi
+import sys
+import warnings
+warnings.filterwarnings('ignore')
+
+#Some issues might appear (SSL verification error) with yhe client if python is not properly configured. 
+# You might find this line useful to skip the error 
+ssl._create_default_https_context = ssl._create_unverified_context
+
+# MinIO server connection information
+minio_url = 'https://s3api.scene.local'  # Replace with your MinIO instance URL
+access_key = 'testuser'       # Replace with your actual access key
+secret_key = 'testscene'       # Replace with your actual secret key
+
+# Initialize a session using boto3
+session = boto3.session.Session()
+
+# Create a client with the MinIO server
+# Add "verify=False" tothe list if you have troubles with SSL verification
+s3_client = session.client(
+    's3',
+    verify=False,
+    endpoint_url=minio_url,    
+    aws_access_key_id=access_key,
+    aws_secret_access_key=secret_key,
+    config=Config(signature_version='s3v4'),
+    region_name='us-east-1'  # You can choose any region name. Not applicable here
+)
+print("Libraries loaded successfully")
+
+
+# 1. Upload a file to the Data Lake
+
+file_path='athens.png'
+bucket_name = 'testbucket'     # Bucket to upload the file to
+object_name = 'images/athens2.png'    # Object name in the bucket (can be a path like 'folder/file.txt')
+
+# Upload the file
+
+s3_client.upload_file(file_path, bucket_name, object_name)
+print("Upload successful")
+
+# 2. List all files from a bucket within a Data Lake
+# List objects in the bucket
+response = s3_client.list_objects(Bucket=bucket_name)
+
+# Print each file name (key)
+if 'Contents' in response:
+    for file in response['Contents']:
+        print(file['Key'])
+else:
+    print("No files found in the bucket.")
+
+
+# 3. Download file from a Data Lake
+
+# File details
+download_path='athens_download.png'
+bucket_name='testbucket'
+object_name = 'images/athens2.png'    
+
+# Download the file
+s3_client.download_file(bucket_name, object_name, download_path)
+print(f"Downloaded {object_name} to {download_path}")
+
+
+# 4. Delete a file from the Data Lake
+
+# Delete the file
+s3_client.delete_object(Bucket=bucket_name, Key=object_name)
+print("Delete successful")
+
+```
 
 
 <br/><br/>
