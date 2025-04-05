@@ -76,7 +76,7 @@ SCENE-O was built following best practices in ontology engineering:
 | **Jupyter Notebooks** | Semantic querying and integration testing |
 | **Custom API (planned)** | To expose ontology-based search functionality |
 
---
+
 
 ## Semantic Features Enabled
 
