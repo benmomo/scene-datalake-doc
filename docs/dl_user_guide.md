@@ -60,7 +60,7 @@ You can **create buckets** by doing the following:
 
 <br/>
 
-The next step is to create (at least) one policy for the bucket. You can **create a policy** by doing the following:
+The next step is to create (at least) one **policy** for the bucket. You can **create a policy** by doing the following:
 
 1. Access the MinIO web interface as before
 2. Click **Policies**, and then **Create Policy**
@@ -105,6 +105,18 @@ Policies have a special (JSON) format. Below you can find one example that allow
     ]
 }
 ```
+
+<br/>
+The next step is to create one **user**. You can **create a user** by doing the following:
+
+1. Access the MinIO web interface as before
+2. Click **Identity-->Users**, and then **Create USer**
+3. Provide a unique name (e.g. `testuser`) and a password
+4. Assign a policy from the ones available (e.g., you can assigne the tespoolicy you have created in the previous step)
+
+<img src="https://github.com/benmomo/scene-ontology-doc/blob/main/docs/img/dl_minio3.jpg?raw=true" alt="Minio user" style=" display: block;  margin-left: auto;  margin-right: auto; width: 100%;" /> 
+
+<br/>
 
 <br/><br/>
 
