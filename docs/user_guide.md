@@ -1,5 +1,3 @@
-# User guide 
-
 # SCENE-O User Guide
 
 This guide explains how to use the **SCENE Ontology (SCENE-O)** for semantic annotation, search, and integration within the SCENE platform. It is intended for technical users, developers, and data annotators involved in film-related metadata enrichment or semantic processing.
