@@ -110,13 +110,33 @@ Policies have a special (JSON) format. Below you can find one example that allow
 The next step is to create one **user**. You can **create a user** by doing the following:
 
 1. Access the MinIO web interface as before
-2. Click **Identity-->Users**, and then **Create USer**
+2. Click **Identity-->Users**, and then **Create User**
 3. Provide a unique name (e.g. `testuser`) and a password
 4. Assign a policy from the ones available (e.g., you can assigne the tespoolicy you have created in the previous step)
 
 <img src="https://github.com/benmomo/scene-ontology-doc/blob/main/docs/img/dl_minio3.jpg?raw=true" alt="Minio user" style=" display: block;  margin-left: auto;  margin-right: auto; width: 100%;" /> 
 
 <br/>
+
+After that, youn now log in into the Minio UI with his user and password.
+There is another way, which is the typical way used by applications, and it employs the API. The API is S3-compatible. Examples are provided via Jupyter Notebook
+
+## Using Jupyter Notebook (using Minio API)
+
+There are two common ways to interact with the SCENE Data Lake programmatically using Python:
+
+- **MinIO Python SDK (`minio` package)**: A dedicated library developed by the MinIO team.
+- **Boto3 (`boto3` package)**: Amazon’s official SDK for AWS services, fully compatible with S3 APIs — and therefore also works seamlessly with MinIO.
+
+In this guide, we will use **`boto3`**, which is a robust, well-documented library and often familiar to developers working with cloud environments. It can be used directly in a Jupyter Notebook to upload, download, and list files in the MinIO-powered data lake.
+In the front-end, just click on the **Example** list:
+
+
+<img src="https://github.com/benmomo/scene-ontology-doc/blob/main/docs/img/dl_jupyter1.jpg?raw=true" alt="Minio user" style=" display: block;  margin-left: auto;  margin-right: auto; width: 100%;" /> 
+
+<br/>
+
+
 
 <br/><br/>
 
