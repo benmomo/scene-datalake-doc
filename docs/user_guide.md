@@ -27,7 +27,7 @@ SCENE-O is published in RDF and OWL formats and can be accessed through multiple
 
 ### 🔎 2.1 Visual Exploration with WebVOWL
 
-To explore the structure of SCENE-O graphically, we recommend loading it into [WebVOWL](https://webvowl.scene.local/). You can go to the 'Ontology' item in the bottom menu and select SCENE-O among other ontologies that are also listed
+To explore the structure of SCENE-O graphically, we recommend loading it into [WebVOWL](https://webvowl.scene.local/) fro mthe front-end (Ontology Viewer). You can go to the 'Ontology' item in the bottom menu and select SCENE-O among other ontologies that are also listed
 
 You will see:
 
@@ -73,7 +73,7 @@ You can download the ontology files [here] (https://scene.local/ontology/scene.t
 - [OMD] (https://scene.local/ontology/omd.ttl) (TTL)
 - [Schema.org] (https://scene.local/ontology/schemaorg.owl) (OWL)
 
-Alternatively, there is the [datalñake repository](https://github.com/benmomo/scene-datalake)
+Alternatively, there is the [data lake repository](https://github.com/benmomo/scene-datalake)
 
 ## 3. Annotating Data Using SCENE-O
 
