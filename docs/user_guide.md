@@ -84,7 +84,7 @@ This section demonstrates how to annotate data manually using SCENE-O terms.
 
 Here's a simple example of a scene annotation using Turtle (`.ttl`) syntax:
 
-```turtle
+```
 @prefix schema: <http://schema.org/> .
 @prefix sceneo: <http://scene-project.eu/ontology#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
@@ -95,3 +95,118 @@ Here's a simple example of a scene annotation using Turtle (`.ttl`) syntax:
     sceneo:hasCharacter <http://example.org/character/hero> ;
     sceneo:hasEmotion sceneo:Suspense ;
     sceneo:isPartOf <http://example.org/asset/film-01> .
+```
+
+### 💬 3.2 JSON-LD Annotation Example
+
+Below is the same annotation expressed in `JSON-LD`, a format suitable for embedding in metadata, scripts, or ingestion tools:
+
+```json
+{
+  "@context": {
+    "sceneo": "http://scene-project.eu/ontology#",
+    "dc": "http://purl.org/dc/elements/1.1/"
+  },
+  "@id": "http://example.org/scene/42",
+  "@type": "sceneo:Scene",
+  "dc:title": "Final confrontation at the castle",
+  "sceneo:hasLocation": { "@id": "http://example.org/location/castle" },
+  "sceneo:hasCharacter": { "@id": "http://example.org/character/hero" },
+  "sceneo:hasEmotion": { "@id": "sceneo:Suspense" },
+  "sceneo:isPartOf": { "@id": "http://example.org/asset/film-01" }
+}
+```
+
+This format is ideal for use in pipelines like **Apache NiFi, Node-RED**, or **Jupyter Notebooks**, where JSON is a preferred and easily parsable format.
+
+### 🏷️ 3.3 Common Annotation Targets
+
+Below are typical annotation targets within the SCENE platform, along with example uses of SCENE-O terms:
+
+| Target             | Example Annotation                                           |
+|--------------------|--------------------------------------------------------------|
+| **Video Clip**     | `sceneo:Asset` with type `schema:VideoObject`               |
+| **Script Segment** | `sceneo:Scene` with `dc:subject` and `sceneo:hasCharacter`   |
+| **Location Tag**   | `sceneo:hasLocation` with link to external URI or vocabulary |
+| **Emotion or Mood**| `sceneo:hasEmotion` (e.g., `sceneo:Romantic`, `sceneo:Tense`) |
+
+Using consistent semantic annotations improves the quality of search, linking, and reasoning over the data.
+
+
+### 🔗 3.4 Connecting to External Vocabularies
+
+SCENE-O annotations are designed to integrate with external Linked Data vocabularies to enhance interoperability. You can link to:
+
+- **Wikidata** for entities like `Person`, `Location`, `Genre`, etc.
+- **GeoNames** or **OpenStreetMap** for precise geographic references
+- **Europeana** and other cultural vocabularies for tagging cultural elements
+
+Example (Turtle syntax):
+
+```
+<http://example.org/scene/42> sceneo:hasLocation <http://www.geonames.org/2643743/london.html> .
+```
+
+## 4. Integrating SCENE-O into Workflows
+
+Semantic annotations using SCENE-O are not just metadata — they are active components of the SCENE data pipeline. This section describes how SCENE-O is used during ingestion, enrichment, and querying, and how it fits into real tools like **Apache NiFi**, **Node-RED**, and **Jupyter Notebooks**.
+
+
+### 🔄 4.1 Semantic Annotations in Ingestion Pipelines
+
+Ingestion tools like **Apache NiFi** and **Node-RED** are used to collect multimedia files (videos, scripts, images) and their metadata. SCENE-O annotations can be embedded directly into the metadata objects or generated during processing.
+
+#### Example: Ingesting a script with annotations
+1. A `POST` request is made to a Node-RED endpoint with a JSON body that includes:
+   - Script text
+   - SCENE-O tags (e.g., `sceneo:hasEmotion`, `dc:title`)
+2. Node-RED or NiFi parses and validates the content.
+3. Metadata is stored in MongoDB or MinIO alongside the original asset.
+
+
+
+### ⚙️ 4.2 Connecting SCENE-O to MinIO
+
+Semantic annotations can be stored:
+- As **sidecar metadata files** in MinIO (e.g., `.jsonld`)
+- Embedded within larger compound objects (e.g., a video bundle)
+
+> Recommended: Use consistent file naming and folder structures to keep annotations aligned with media files.
+
+
+
+### 📓 4.3 Querying with Jupyter Notebooks
+
+In the SCENE environment, Jupyter Notebooks allow you to interact with annotated data using Trino or SPARQL.
+
+#### Example: Search for romantic scenes in beach locations
+
+```sql
+SELECT *
+FROM scenes
+WHERE hasEmotion = 'sceneo:Romantic'
+  AND hasLocation LIKE '%beach%'
+```
+You can also perform federated SPARQL queries if the annotations are published to a triplestore or knowledge graph.
+
+
+### 🧪 4.4 Validation and Testing
+
+To ensure your semantic annotations conform to the SCENE-O ontology, it’s important to validate both structure and semantics. Here are recommended tools and methods:
+
+- ✅ **Protégé**: Load your RDF or OWL files into Protégé to check:
+  - Class and property usage
+  - Ontology alignment and inheritance
+  - Data consistency
+
+- ✅ **SHACL (Shapes Constraint Language)**: Define validation rules for expected structures. For example:
+  - `sceneo:Scene` must have at least one `sceneo:hasLocation`
+  - `sceneo:Asset` must include a `dc:title` and be linked via `sceneo:isPartOf`
+
+- ✅ **WebVOWL**: Use this visualization tool to inspect the graph layout and ensure relationships are meaningful and connected as expected.
+
+These validation steps are especially useful during:
+- Ingestion testing
+- Ontology updates
+- Pilot integration phases
+
